@@ -1,0 +1,14 @@
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\bin\Debug\net7.0\App03.exe
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\bin\Debug\net7.0\App03.deps.json
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\bin\Debug\net7.0\App03.runtimeconfig.json
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\bin\Debug\net7.0\App03.dll
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\bin\Debug\net7.0\App03.pdb
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\App03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\App03.AssemblyInfoInputs.cache
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\App03.AssemblyInfo.cs
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\App03.csproj.CoreCompileInputs.cache
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\App03.dll
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\refint\App03.dll
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\App03.pdb
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\App03.genruntimeconfig.cache
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App03\App03\obj\Debug\net7.0\ref\App03.dll
