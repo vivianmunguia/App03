@@ -1,34 +1,29 @@
-﻿static void func1(int arg1, int arg2)
+﻿using App03;
+
+var obj = new EventPublisher();
+obj.valueChanged += delegate (string value)
 {
-    string resultado = (arg1 + arg2).ToString();
-    Console.WriteLine(resultado);
-}
+    Console.WriteLine($"El valor de la propiedad cambió {value}");
+};
+//obj.valueChanged += new MiEventoHandler(obj_valueChanged);
 
-static void func2(int arg1, int arg2)
+//void obj_valueChanged(string value)
+//{
+//    Console.WriteLine($"El valor de la propiedad cambió {value}");
+//}
+
+string str;
+
+do
 {
-    string resultado = (arg1 * arg2).ToString();
-    Console.WriteLine(resultado);
-}
+    Console.WriteLine("Ingrese un valor");
+    str = Console.ReadLine()!;
+    if (!str.Equals("salir"))
+    {
+        obj.Val = str;
+    }
+} while (!str.Equals("salir"));
 
-MiDelegado f1 = func1;
-MiDelegado f2 = func2;
+Console.WriteLine("Culminó el programa porque escribió 'Salir'");
 
-MiDelegado f1f2 = f1 + f2;
-int arg1 = 10;
-int arg2 = 20;
-
-Console.WriteLine("Se está ejecutando el primer delegate");
-f1(arg1, arg2);
-
-Console.WriteLine("Se está ejecutando el segundo delegate");
-f2(arg1, arg2);
-
-Console.WriteLine("Se están ejecutando el primer y segundo delegate al mismo tiempo");
-f1f2(arg1, arg2);
-
-//f1f2 = f1f2 - f2;
-f1f2 -= f2;
-Console.WriteLine("Ejecutando la concatenacion pero sin el f2");
-f1f2(arg1, arg2);
-
-public delegate void MiDelegado(int arg1, int arg2);
+public delegate void MiEventoHandler(string value);
