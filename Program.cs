@@ -3,14 +3,20 @@
 var obj = new EventPublisher();
 obj.valueChanged += delegate (string value)
 {
-    Console.WriteLine($"El valor de la propiedad cambió {value}");
+    Console.WriteLine($"Se está disparando el evento handler 1{value}");
 };
-//obj.valueChanged += new MiEventoHandler(obj_valueChanged);
 
-//void obj_valueChanged(string value)
-//{
-//    Console.WriteLine($"El valor de la propiedad cambió {value}");
-//}
+obj.valueChanged += new MiEventoHandler(obj_valueChanged1);
+obj.valueChanged += new MiEventoHandler(obj_valueChanged2);
+
+void obj_valueChanged1(string value)
+{
+    Console.WriteLine($"Se está disparando el evento handler 2 {value}");
+}
+void obj_valueChanged2(string value)
+{
+    Console.WriteLine($"Se está disparando el evento handler 3 {value}");
+}
 
 string str;
 
