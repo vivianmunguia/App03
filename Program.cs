@@ -9,6 +9,11 @@ obj.valueChanged += delegate (string value)
 obj.valueChanged += new MiEventoHandler(obj_valueChanged1);
 obj.valueChanged += new MiEventoHandler(obj_valueChanged2);
 
+obj.miEvento += delegate (object sender, MiEventoArgs e)
+{
+    Console.WriteLine($"{sender.GetType()} la propiedad valor que cambió es {e.data}");
+};
+
 void obj_valueChanged1(string value)
 {
     Console.WriteLine($"Se está disparando el evento handler 2 {value}");
