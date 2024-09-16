@@ -1,40 +1,19 @@
-﻿using App03;
+﻿MiDelegado d1 = (x) => x * x;
+Console.WriteLine($"El resultado es {d1(5)}");
 
-var obj = new EventPublisher();
-obj.valueChanged += delegate (string value)
+d1 = (x) => x * 10;
+Console.WriteLine($"El resultado de multiplicar por 10 {d1(7)}");
+
+MiDelegado2 d2 = (x, y) =>
 {
-    Console.WriteLine($"Se está disparando el evento handler 1{value}");
+    Console.WriteLine($"Imprimiendo el valor de {x}");
+    Console.WriteLine($"Imprimiendo el valor de {y}");
 };
 
-obj.valueChanged += new MiEventoHandler(obj_valueChanged1);
-obj.valueChanged += new MiEventoHandler(obj_valueChanged2);
+BooleanoDelegado d3 = (x) => x > 10;
+Console.WriteLine($"El resultado si el numero es mayor que 10 {d3(11)}");
+Console.WriteLine($"El resultado si el numero es menor que 10 {d3(7)}");
 
-obj.miEvento += delegate (object sender, MiEventoArgs e)
-{
-    Console.WriteLine($"{sender.GetType()} la propiedad valor que cambió es {e.data}");
-};
-
-void obj_valueChanged1(string value)
-{
-    Console.WriteLine($"Se está disparando el evento handler 2 {value}");
-}
-void obj_valueChanged2(string value)
-{
-    Console.WriteLine($"Se está disparando el evento handler 3 {value}");
-}
-
-string str;
-
-do
-{
-    Console.WriteLine("Ingrese un valor");
-    str = Console.ReadLine()!;
-    if (!str.Equals("salir"))
-    {
-        obj.Val = str;
-    }
-} while (!str.Equals("salir"));
-
-Console.WriteLine("Culminó el programa porque escribió 'Salir'");
-
-public delegate void MiEventoHandler(string value);
+public delegate int MiDelegado(int x);
+public delegate void MiDelegado2(int x, string s);
+public delegate bool BooleanoDelegado(int x);
